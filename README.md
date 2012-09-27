@@ -1,4 +1,7 @@
 gumshoe
 =======
 
-HTML 5 interface that will let you easily tail files and evaluate data in real time remotely. Bootstrap is used for the UI and node.js is used for the web sockets layer.
+# What is Gumshoe?
+![Gumshoe Logo](https://s3.amazonaws.com/solid-github/gumshoe/gumshoe-23033738.png) Gumshoe is an easy way to look at log files in real time using a web based interface. It uses Twitter's bootstrap,
+node.js and socket.io to provide powerful debugging tools for your applications.
+
