@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gumshoe, from Solid Interactive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch changes on your files as they occur. Perfect tool for debugging your applications">
+    <meta name="author" content="Travis McHattie, Solid Interactive <www.thinksolid.com>">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/gumshoe.css" rel="stylesheet">
+    <script src="http://127.0.0.1:8000/socket.io/socket.io.js"></script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <span class="brand">Welcome to Gumshoe</span>
+            <a id="btnGiveUp" href="#" class="btn btn-danger pull-right">Close</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Clues</li>
+                    <li><a href="#" class="clue" rel="doubletreelog">DoubleTree Logs</a></li>
+                    <li><a href="#" class="clue" rel="apacheerrors">Apache Error Logs</a></li>
+                    <li><a href="#" class="clue" rel="localpropellogs">Propel Logs</a></li>
+                </ul>
+            </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+            <div class="starthere well">
+                <h3 class="trebuchet">"There is nothing like first-hand evidence."</h3>
+                <p>-- Sherlock Holmes</p>
+            </div>
+
+        </div><!--/span-->
+    </div><!--/row-->
+
+    <hr>
+
+    <footer>
+        <p>Gumshoe brought to you by <a href="http://thinksolid.com" target="_blank">Solid Interactive</a></p>
+    </footer>
+
+</div><!--/.fluid-container-->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/gumshoeclient.js"></script>
+
+</body>
+</html>
