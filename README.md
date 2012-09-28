@@ -13,8 +13,6 @@ your server. We most commonly use the tool to test APIs and server code as devic
 
 ## Getting Started
 
-* * *
-
 * Get the latest code
 * Make sure you have [node.js](http://nodejs.org/) installed. We use version 0.6.
 * Install [socket.io](http://socket.io) into the server folder. We use version 0.9.10. `npm install socket.io`
@@ -53,8 +51,6 @@ module.exports = function(){
 
 ## Future Plans
 
-* * *
-
 * Load the file contents in initially upon watching a file
 * Allowing some form of markup so you can get row highlighting (example [ERROR] whould highlight red)
 * Load menu into HTML file from the gumshoe-config.js file. Eliminating the need for editing the HTML file at all
@@ -67,8 +63,6 @@ NOTE: If you change the port that your node server is running on then make sure 
 `<script src="http://127.0.0.1:8000/socket.io/socket.io.js"></script>`
 
 ## About
-
-* * *
 
 Gumshoe is an open-source project by [Solid Interactive](http://www.thinksolid.com) released to hopefully make debugging and profile your applications/APIs easier. We used the following open source solutions to build this product.
 
@@ -84,7 +78,5 @@ Gumshoe is an open-source project by [Solid Interactive](http://www.thinksolid.c
 * 2012/09/27 - v.0.1.0 - Initial Release
 
 ## License
-
-* * *
 
 Gumshoe is released under a [MIT](http://opensource.org/licenses/mit-license.php) license.
