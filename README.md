@@ -16,9 +16,9 @@ your server. We most commonly use the tool to test APIs and server code as devic
 * Get the latest code
 * Make sure you have [node.js](http://nodejs.org/) installed. We use version 0.6.
 * Install [socket.io](http://socket.io) into the server folder. We use version 0.9.10. `npm install socket.io`
-* Update the configuration file to include all of the files that you would like the ability to watch `<gumshoe root>/server/gumshoe-config.js`
+* Update the configuration file to include all of the files that you would like the ability to watch.
 
-Example
+Example `<gumshoe root>/server/gumshoe-config.js`
 
 ```javascript
 module.exports = function(){
@@ -49,6 +49,8 @@ module.exports = function(){
 * Load the gumshoe page `http://<yoursite>/gumshoe/`
 * Click on your "clue" and watch your file updates come through
 
+![Gumshoe Screenshot](https://s3.amazonaws.com/solid-github/gumshoe/gumshoe-hard-evidence.png)
+
 ## Future Plans
 
 * Load the file contents in initially upon watching a file
@@ -72,8 +74,6 @@ Gumshoe is an open-source project by [Solid Interactive](http://www.thinksolid.c
     Socket.IO
 
 ## Release History
-
-* * *
 
 * 2012/09/27 - v.0.1.0 - Initial Release
 
