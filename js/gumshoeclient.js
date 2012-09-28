@@ -9,7 +9,8 @@ $(document).ready(function(){
         socket.emit('stopListening', {});
     });
 
-    $('.clue').click(function(){
+    // Catch all clicks in clues now and in the future
+    $("ul.nav-list").delegate(".clue", "click", function(){
         var instance = $(this).attr('rel');
 
         var myClue = clueContainer;
@@ -24,6 +25,31 @@ $(document).ready(function(){
         setTimeout(function(){
             $('.cluewindow').addClass('clueloaded');
         },1000);
+    });
+
+    console.log("setup...");
+    socket.on("watchfiles", function(watchfiles) {
+
+        console.log("watfiles received");
+        console.log(JSON.stringify(watchfiles));
+        // Cache
+        var $ul = $("ul.nav-list");
+
+        // Remove not running warning
+        $("li.nav-warning").remove();
+
+        // Remove old items if new ones sent:
+        $("ul.nav-list a.clue").remove();
+
+        // Add files to watch from config
+        $.each(watchfiles, function(onefile) {
+            var $a = $("<a/>").attr("href","#").attr("class","clue").attr("rel", onefile).html(watchfiles[onefile].name),
+                $li = $("<li/>").append($a);
+
+            $ul.append($li);
+
+        });
+
     });
 
     socket.on("notify", function (message){

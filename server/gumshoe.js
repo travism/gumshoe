@@ -30,6 +30,10 @@
     var socket = io.listen(server);
     socket.on('connection', function(client){
 
+        console.log("sending...");
+        // Send desired files to watch to client
+        socket.sockets.emit("watchfiles",  gumshoe.config.watchfiles);
+
         client.on('registerListener', function (data) {
             var filename = gumshoe.config.watchfiles[data.id].path;
 
