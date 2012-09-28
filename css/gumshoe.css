@@ -1,0 +1,41 @@
+body { background: #222;color: #cccccc;padding-bottom: 40px;padding-top: 60px;}
+pre {background: none;border: none;}
+
+.sidebar-nav { padding: 9px 0; }
+.navbar .brand, .nav-header {color:#fff;}
+.well {background: #333;border:1px solid #444;}
+.nav-list > li, .nav-list > li > a {text-shadow: none;}
+.monospace{font-family: Monaco,"Bitstream Vera Sans Mono","Lucida Console",Terminal,monospace;}
+.trebuchet{font-family: "Trebuchet MS","Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif;}
+.cluewindow{  overflow-x:hidden; background-color:#333; height:20px; overflow-y:auto; color: #EEE; text-shadow:#000 0 0 2px;  padding: 10px; font-size:12px; line-height:20px;}
+.clueloaded { height: 430px;}
+div.clueinstance
+{
+    opacity: 1;
+    width:98%;
+    height:500px;
+    animation:showclue 1s;
+    -moz-animation:showclue 1s; /* Firefox */
+    -webkit-animation:showclue 1s; /* Safari and Chrome */
+    -o-animation:showclue 1s; /* Opera */
+}
+
+div.clueinstance.goaway {
+    opacity: 0;
+    width:0px;
+    height:0px;
+    animation:hideclue 1s;
+    -moz-animation:hideclue 1s; /* Firefox */
+    -webkit-animation:hideclue 1s; /* Safari and Chrome */
+    -o-animation:hideclue 1s; /* Opera */
+}
+
+@keyframes showclue { from {opacity:0;height:0px;width:0px;} to {height:500px;width:98%;opacity:1;} }
+@-moz-keyframes showclue { from {opacity:0;height:0px;width:0px;} to {height:500px;width:98%;opacity:1;}}
+@-webkit-keyframes showclue { from {opacity:0;height:0px;width:0px;} to {height:500px;width:98%;opacity:1;}}
+@-o-keyframes showclue { from {opacity:0;height:0px;width:0px;} to {height:500px;width:98%;opacity:1;}}
+
+@keyframes hideclue { from {opacity:1;height:500px;width:98%;} to {height:0px;width:0px;opacity:0; top:0px;}}
+@-moz-keyframes hideclue { from {opacity:1;height:500px;width:98%;} to {height:0px;width:0px;opacity:0; top:0px;}}
+@-webkit-keyframes hideclue { from {opacity:1;height:500px;width:98%;} to {height:0px;width:0px;opacity:0; top:0px;}}
+@-o-keyframes hideclue { from {opacity:1;height:500px;width:98%;} to {height:0px;width:0px;opacity:0; top:0px;}}
