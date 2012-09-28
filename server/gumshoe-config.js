@@ -10,18 +10,17 @@ module.exports = function(gumshoe){
     path = require("path");
 
     this._watchfiles = {
-        uniquekeyname1: {
-            name: "{Friendly Label}",
-            path: "{/full/path/to/file/}"
+
+        // Example logs: replace these with your own
+        apacheErrors: {
+            name: "Apache Error Logs",
+            path: "/var/log/apache2/error.log"
         },
-        uniquekeyname2: {
-            name: "{Friendly Label}",
-            path: "{/full/path/to/file/}"
-        },
-        uniquekeyname3: {
-            name: "{Friendly Label}",
-            path: "{/full/path/to/file/}"
+        apacheAccess: {
+            name: "Apache Access Logs",
+            path: "/var/log/apache2/access.log"
         }
+
     }
 
     gumshoe.config.watchfiles = this._watchfiles;
