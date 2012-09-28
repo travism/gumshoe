@@ -39,12 +39,7 @@ module.exports = function(){
     gumshoe.config.path = path.join(__dirname, '../..', 'index.html');
 }
 ```
-* Run the gumshoe server code `node <gumshoe root>/server/gumshoe.js`
-* Update your index.html code to include links for the watch files
-```html
-<li><a href="#" class="clue" rel="apacheerrorlog">Apache Error Log</a></li>
-<li><a href="#" class="clue" rel="propellog">Propel Log</a></li>
-```
+* Run the gumshoe server code `node <gumshoe root>/server/gumshoe`
 
 * Load the gumshoe page `http://<yoursite>/gumshoe/`
 * Click on your "clue" and watch your file updates come through
