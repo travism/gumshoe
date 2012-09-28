@@ -12,7 +12,7 @@ evaluate multiple log files simultaneously and remotely. Perfect for a developme
 your server. We most commonly use the tool to test APIs and server code as devices access our resources, exposing this data easily increases the efficiency of your QA process.
 
 ## Getting Started
----------------------------------------
+---
 
 * Get the latest code
 * Make sure you have [node.js](http://nodejs.org/) installed. We use version 0.6.
@@ -20,8 +20,11 @@ your server. We most commonly use the tool to test APIs and server code as devic
 `npm install socket.io`
 * Update the configuration file to include all of the files that you would like the ability to watch
 `<gumshoe root>/server/gumshoe-config.js`
+
 Example
-`module.exports = function(){
+
+```javascript
+module.exports = function(){
     this._watchfiles = {
         apacheerrorlog: {
             name: "Apache Error Log",
@@ -37,19 +40,21 @@ Example
     gumshoe.config.serverPort = 8000;
     gumshoe.config.serverAddress = "127.0.0.1";
     gumshoe.config.path = path.join(__dirname, '../..', 'index.html');
-}`
-* Run the gumshoe server code
-`node <gumshoe root>/server/gumshoe.js`
+}
+```
+* Run the gumshoe server code `node <gumshoe root>/server/gumshoe.js`
 * Update your index.html code to include links for the watch files
-`<li><a href="#" class="clue" rel="apacheerrorlog">Apache Error Log</a></li>
-<li><a href="#" class="clue" rel="propellog">Propel Log</a></li>`
-* Load the gumshoe page
-`http://<yoursite>/gumshoe/`
+```html
+<li><a href="#" class="clue" rel="apacheerrorlog">Apache Error Log</a></li>
+<li><a href="#" class="clue" rel="propellog">Propel Log</a></li>
+```
+
+* Load the gumshoe page `http://<yoursite>/gumshoe/`
 * Click on your "clue" and watch your file updates come through
 
 ## Future Plans
 
----------------------------------------
+---
 
 * Load the file contents in initially upon watching a file
 * Allowing some form of markup so you can get row highlighting (example [ERROR] whould highlight red)
@@ -64,7 +69,7 @@ NOTE: If you change the port that your node server is running on then make sure 
 
 ## About
 
----------------------------------------
+---
 
 Gumshoe is an open-source project by [Solid Interactive](http://www.thinksolid.com) released to hopefully make debugging and profile your applications/APIs easier. We used the following open source solutions to build this product.
 
@@ -75,12 +80,12 @@ Gumshoe is an open-source project by [Solid Interactive](http://www.thinksolid.c
 
 ## Release History
 
----------------------------------------
+---
 
 * 2012/09/27 - v.0.1.0 - Initial Release
 
 ## License
 
----------------------------------------
+---
 
 Gumshoe is released under a [MIT](http://opensource.org/licenses/mit-license.php) license.
